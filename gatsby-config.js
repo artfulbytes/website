@@ -35,6 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/pages`,
+        name: `devenv`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
@@ -55,7 +62,7 @@ module.exports = {
             options: {
               quality: 80,
               showCaptions: false,
-              maxWidth: 800,
+              maxWidth: 1000,
               disableBgImageOnAlpha: true, // To remov blur from transparent pngs
               linkImagesToOriginal: false,
               backgroundColor: `transparent`,

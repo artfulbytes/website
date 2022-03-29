@@ -17,6 +17,7 @@ const NavbarLinks = () => {
         <>
         <NavElement to="/">Articles</NavElement>
         <NavElement to="/projects">Projects</NavElement>
+        <NavElement to="/devenv">Tools</NavElement>
         <NavElement to="/about">About</NavElement>
         </>
     )
