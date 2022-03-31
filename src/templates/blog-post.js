@@ -79,7 +79,9 @@ const BlogPostTemplate = ({ data, location }) => {
           </HeaderImg>
         </HeaderWrapper>
         <TableOfContentsWrapper>
+        { post.tableOfContents.items ?
           <TableOfContents location={location} page={post} />
+          : "" }
         </TableOfContentsWrapper>
         <PostWrapper>
           <MDXProvider components={shortcodes}>
