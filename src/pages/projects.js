@@ -58,7 +58,6 @@ const projects = ({data}) => {
             <ProjectInfo>
               <ProjectTitle>{project.node.frontmatter.title}</ProjectTitle>
               <ProjectExcerpt>{project.node.frontmatter.excerpt}</ProjectExcerpt>
-              <ProjectDate>{project.node.frontmatter.startDate}</ProjectDate>
             </ProjectInfo>
           </ProjectCard>
         ))}
@@ -182,7 +181,6 @@ const ProjectDate = styled.p`
 
 const ProjectExcerpt = styled.p`
   text-align: center;
-  font-style: italic;
   margin: 0;
   font-size: 0.9rem;
   z-index: 2;

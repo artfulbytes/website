@@ -130,7 +130,7 @@ const HeaderImg = styled.div`
   display: block;
   position: relative;
   width: 100%;
-  padding-top: 40%;
+  padding-top: 50%;
   margin-bottom: 1.5rem;
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 1 / span 2;

@@ -13,7 +13,7 @@ const About = () => {
           <AboutTitle>Hi and welcome.</AboutTitle>
           <p>
 I'm Niklas. I've been intrigued by programming ever since the 80s when I laid my first lines of BASIC on a Commodore 64. Wait..., not another one of those sentimental stories. I'm not that old.
-Actually, I began programming at the end of college on a modern PC in 2013 and only got into embedded systems a few years later during my MSc in computer engineering. And for the last two years, I've been writing code for medium format cameras as an embedded systems engineer at Hasselblad in Sweden.
+Actually, I began programming at the end of college on a modern PC in 2013 and only got into embedded systems a few years later during my MSc in computer engineering. And for the last three years, I've been writing code for medium format cameras as an embedded systems engineer at Hasselblad in Sweden.
 </p>
 <p>
 On this blog, I write about <a href="https://en.wikipedia.org/wiki/Embedded_system">embedded systems</a> based on my own projects. Why writing? Because writing helps me think - there is no better tool for organizing a long line of thought. It's also healthy and useful to share those thoughts with others. Why embedded systems? Because I get more satisfaction from controlling a piece of hardware than building an app. The internet is riddled with content about the latter, but not so much about the former.

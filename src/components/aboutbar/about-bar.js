@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 export const AboutBar = () => {
    const data = useStaticQuery(graphql`{
-  file(relativePath: {eq: "author.png"}) {
+  file(relativePath: {eq: "author.jpg"}) {
     childImageSharp {
       gatsbyImageData(width: 200, height: 200, placeholder: NONE, layout: CONSTRAINED)
     }
