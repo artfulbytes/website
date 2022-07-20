@@ -1,0 +1,28 @@
+---
+title: Microcontroller Programming without an IDE (Makefile + Toolchain) - Embedded System Project Series
+slug: makefile-youtube
+date: 2022-07-20
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+import Gist from "react-gist"
+
+[New video](https://www.youtube.com/watch?v=HCfq44NNBaU)
+
+There are two common ways to set up a development environment for a microcontroller (embedded) project:
+
+IDE - Use the integrated development environment (IDE) provided by the vendor.
+CLI - Use the toolchain from the command-line (CLI), build with make (Makefile), and use your code editor of choice.
+
+In the last video, I focused on the first approach and set up an IDE, Code Composer Studio (CCStudio). In [this video](https://www.youtube.com/watch?v=HCfq44NNBaU), I focus on the second approach. I talk about toolchains, the advantages of building from the command-line, and show how to install a GCC-based toolchain and use it to compile the same blink LED project (MSP430) as in the last video. Finally, I create a Makefile from scratch to make building easier.
+
+I re-use the blink project, but I broke out some of the LED functionality into separate files to make it into multi-file project. The Makefile is basic, but can serve as a good starting point for any microcontroller project.
+
+<Gist id="78b110d5a8bdb9f48ca71d0cac76ae42" />
+
+I previously made a [blog post](./makefile-microcontroller) covering similar things.
+
+I talk about compiler flags, and I recommend [this blog post](https://interrupt.memfault.com/blog/best-and-worst-gcc-clang-compiler-flags) from interrupt memfault.
+
+See [tools page](/devenv) for more info about my Linux setup.
