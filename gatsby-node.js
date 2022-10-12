@@ -44,7 +44,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Create several pages for the blog post grid (pagination)
-  const postPerPage = 12
+  const postPerPage = 30
   const numPages = Math.ceil(result.data.blog.edges.length / postPerPage)
   Array.from({ length: numPages }).forEach((_, idx) => {
     actions.createPage({

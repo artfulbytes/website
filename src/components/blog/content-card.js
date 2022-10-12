@@ -6,39 +6,18 @@ import { GatsbyImage } from "gatsby-plugin-image";
 export const ContentCard = ({date, title, excerpt, slug, featureImage}) => {
   return (
     <CardWrapper to={slug}>
-      <CardImage>
-        <CardImageInner>
-        <GatsbyImage
-          image={featureImage}
-          alt={""}
-          style={{
-            width: "100%",
-            height: "100%"
-          }}
-          imgStyle={{
-            "overflow": "hidden"
-          }} />
-        </CardImageInner>
-      </CardImage>
-      <CardContent>
         <CardTitle>
-          {title}
+          {date} | {title}
         </CardTitle>
-        <CardDescription>
-          {date}
-        </CardDescription>
-      </CardContent>
     </CardWrapper>
   );
 }
 
 const CardWrapper = styled(props => <Link {...props} />)`
-  grid-column-end: span 1;
   display: flex;
   flex-direction: column;
   background-color: white;
   cursor: pointer;
-  border: 1px solid ${props => props.theme.colors.border};
   text-decoration: none !important;
   transition: 0.1s;
   :hover {

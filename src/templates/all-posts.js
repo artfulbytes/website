@@ -18,7 +18,7 @@ export const pageQuery = graphql`query AllPostsQuery($skip: Int!, $limit: Int!) 
     edges {
       node {
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYYMMDD")
           excerpt
           title
           slug
@@ -83,10 +83,7 @@ const GridAndPaginationWrapper = styled.div`
 `
 
 const CardGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.25rem;
-  margin: 0.75rem 0 1.5rem 0;
+  margin: 2.0rem 0 1.5rem 0;
 
   @media ${props => props.theme.breakpoints.sitewidth} {
     grid-gap: 0.75rem;
