@@ -1,0 +1,27 @@
+---
+title: Static Analysis for C/C++ with cppcheck (+Makefile)
+slug: analysis-with-cppcheck
+date: 2022-10-02
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+import Gist from "react-gist"
+
+[Another video](https://www.youtube.com/watch?v=24ajcWSfdaY) in my project series.
+
+I demonstrate cppcheck, which is a static analyser for C/C++. I show how to enable and suppress errors, and create a Makefile-rule that lets me run "make cppcheck" from the command-line to check my entire project.
+
+[This](https://github.com/artfulbytes/nsumo_video) is the repository that I commit to in the video series.
+
+
+Example 1:
+```
+cppcheck --quiet --enable=all --error-exitcode=1 main.c file1.c src/ -I include/
+```
+
+Example 2 (suppress specific error):
+```
+cppcheck --quiet --enable=all --error-exitcode=1 --suppress=unusedFunction:main.c:1
+```
+

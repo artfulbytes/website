@@ -1,0 +1,14 @@
+---
+title: Simple CI/CD with Github Actions and Docker
+slug: simple-cicd
+date: 2022-10-09
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+import Gist from "react-gist"
+
+
+I set up a simple continuous integration (CI) / continuous delivery (CD) pipeline using GitHub actions. Its job is to automatically build and analyse my code every time I push a new commit to GitHub. I create a docker image to hold the cross-toolchain (msp430-gcc) that I'm using to build the code for my target. the msp430 microcontroller. With this solution, the toolchain is always available in the GitHub action, and I don't have to worry about it breaking at some later point.
+
+The [video](https://www.youtube.com/watch?v=dh1NFAIoZCI) and the [repository](https://github.com/artfulbytes/nsumo_video).
