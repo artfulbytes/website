@@ -64,8 +64,8 @@ that I've seen have the same pinout:
 | Pin | Description |
 | --- | ----------------- |
 | VIN | Support 5 V or 3.3 V (double-check your breakout board to make sure)  |
-| XSHUT | Set sensor in reset (useful for multi-sensor support, otherwise can be left unconnected) |
-| GPIO0 | Interrupt pin (can be left unconnected if polling) |
+| XSHUT (GPIO0) | Set sensor in reset (useful for multi-sensor support, otherwise can be left unconnected) |
+| GPIO1 | Interrupt pin (can be left unconnected if polling) |
 | GND | Ground |
 | SDA | I2C data line |
 | SCL | I2C clock line |
@@ -228,7 +228,7 @@ configure their address individually. This solution is described in the applicat
 note [AN4846](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi35MnZyJnyAhVGpIsKHYpADdkQFnoECAcQAw&url=https%3A%2F%2Fwww.st.com%2Fresource%2Fen%2Fapplication_note%2Fan4846-using-multiple-vl53l0x-in-a-single-design-stmicroelectronics.pdf&usg=AOvVaw1gsS6wE0wQB6f2BR1CKrqs).
 
 ## How to hook up multiple VL53L0X
-Besides connecting the sensors to the VCC, GND, SDA, and SCL pin, we should also connect the XSHUT/GPIO0 pin
+Besides connecting the sensors to the VCC, GND, SDA, and SCL pin, we should also connect the XSHUT (GPIO0) pin
 for hardware standby. I will be using three sensors as an example and connect their XSHUT to p1.0, p1.1
 and p1.2 of the MSP430.
 
