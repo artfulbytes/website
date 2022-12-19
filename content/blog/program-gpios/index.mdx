@@ -1,0 +1,17 @@
+---
+title: How I program GPIOs in C
+slug: program-gpios
+date: 2022-12-18
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+import Gist from "react-gist"
+
+In [this video](https://www.youtube.com/watch?v=inQODPSve-I), I program the I/O-pins
+on my robot (and development board) according to the pin assignment in my schematic. Writing to registers
+is cumbersome, so to make things easier, I implement a code abstraction in C that lets me configure and
+initialize all pins in a single place.
+
+The video resulted in three new commits, which can be viewed in my [GitHub repository](https://github.com/artfulbytes/nsumo_video).
+
