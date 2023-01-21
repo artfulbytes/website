@@ -1,0 +1,16 @@
+---
+title: Assert on a Microcontroller
+slug: mcu-assert
+date: 2023-01-17
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+[Another video](https://youtu.be/3Fgda8mNu-I) in my video series is out. In this one, I implement an assert handler for my microcontroller. The typical behavior of an assert is to abort a program when a certain condition is not fulfilled, which is a reasonable thing to do on a system with an operating system. A bare-metal microcontroller has no operating system. There is only one program, and it's running bare, and as such, it doesn't make sense to abort this program in the same way. So if you want to take advantage of asserts on a microcontroller, you need to roll your own implementation, which is what I do in my video. I implement an assert that
+
+1. Stops the motors ("safe state")
+2. Logs the location of the assert
+3. Triggers a breakpoint
+4. Blinks an LED indefinitely
+
+As always, the code is available in my [GitHub repository](https://github.com/artfulbytes/nsumo_video).
