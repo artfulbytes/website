@@ -1,0 +1,9 @@
+---
+title: Printf on a Microcontroller
+slug: printf-mcu
+date: 2023-03-14
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+In [this video](https://youtu.be/ZdDxx1GIFj0), I add a printf implementation suitable for microcontrollers so that I can print formatted strings to the terminal. Underneath, it calls the UART driver I implemented in the last video. I further wrap the printf function in a TRACE macro to prefix every trace with filename and line number. Finally, I add trace to my assert function, but only trace the program counter (PC) to save space and show how to get the corresponding file+line with addr2line.
