@@ -1,0 +1,11 @@
+---
+title: ADC driver with DMA in C
+slug: adc-driver-dma
+date: 2023-05-14
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+[New video](https://youtu.be/UsgIwZ1lHeA).
+
+My sumobot has four line sensors to detect the white border that surrounds the platform. In this video, I write an ADC driver to sample the values from these sensors. To reduce CPU load, I employ a sequential sampling strategy where the ADC peripheral samples and writes all channel values to memory via DMA before interrupting the CPU. Finally, I add additional software abstractions to turn the raw voltage values into actual line positions.
