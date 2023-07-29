@@ -1,0 +1,9 @@
+---
+title: NEC Protocol Driver (Infrared remote)
+slug: nec-protocol
+date: 2023-04-05
+featuredImage: feature.jpg
+excerpt: ...
+---
+
+In [this video](https://youtu.be/K7eHkij-wNY), I develop a simple driver to decode the signal between an IR remote and my robot. The square-like signal follows the NEC protocol, which I decode by detecting the edges through GPIO interrupts, and measure the time between them using the microcontroller's timer peripheral.
